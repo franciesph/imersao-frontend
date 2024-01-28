@@ -1,0 +1,180 @@
+body {
+    background-color: #000;
+}
+
+.sidebar {
+    position: fixed; /** mantem a mesma posição**/
+    top: 0; /** sempre no topo*/
+    left: 0; /** sempre a esquerda(sempre com posiçoes fora o estatico)**/
+    bottom:0; /** fixo embaixo**/
+    padding: 12px; /**todos os lados - espaçamento**/
+    width: 300px; /** largura **/
+}
+
+.sidebar_navigation {
+    background-color: #121212;
+    border-radius: 8px;/** bordinha redonda **/
+    padding: 16px 0 0 16px; /**alto direita enbaizo esquerda **/
+}
+
+.sidebar_navigation .logo {
+    background: #121212;
+    display: flex;
+    border-radius: 8px;/** bordinha redonda **/
+    padding: 16px 0 0 16px;
+}
+
+.sidebar_navigation .logo img{ /**logo dentro de img - logo, img = logo e img**/
+    width: 80px; /**largura**/
+}
+
+.sidebar nav ul {
+    margin-top: 20px; /* decolar do topo */ 
+    padding: 0 20px 10px 20px;
+}
+
+.sidebar nav ul li{
+    padding: 10px 0; /*alto e baixo*/ 
+}
+
+.sidebar nav ul li a{
+    color: #b3b3b3;
+    text-decoration:none;
+    font-weight: 600; /*negrito*/
+    font-size: 14px; /* tamanho da fonte*/
+    font-family:"DM Sans", sans-serif;
+}
+
+.library {
+    display: flex;
+    justify-content: space-between; /*tudo justificado e com espaços entre os objetos*/
+    flex-direction: column;/*flexivel em que direção*/
+    background-color: #121212;
+    border-radius: 8px;/** bordinha redonda **/
+    padding: 4px 8px; /**alto direita **/
+    color: #b3b3b3;
+    text-decoration:none;
+    font-size: 14px; /* tamanho da fonte*/
+    font-family:"DM Sans", sans-serif;
+    margin-top: 10px; /* decolar do topo */ 
+    font-weight: 600; /*negrito*/
+}
+.library .library_content {
+    display: flex;
+    justify-content: space-between; /*tudo justificado e com espaços entre os objetos*/
+    
+}
+.library .library_button{
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent; 
+    border: 0;
+    font-size: 14px; 
+    font-weight: 700; 
+    font-family:"DM Sans", sans-serif;
+    text-align: center; 
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+
+.library .library_button .fa{
+    font-size: 20px;
+    margin-right: 10px;/**descolar da direita*/
+    font-weight: 300;
+    padding-right: 8px; /*criar espaçamento em torn o dele na direita*/
+    
+}
+
+.library .library_content .fa-plus{
+    margin: 24px 10px; 
+}
+
+.section-playlist{
+    display: flex;
+    border-radius: 10px;
+    align-items: flex-start;
+    justify-content: space-between; /*justificar, espaço entre os elementos*/
+    gap: 20px;/*qual a distancia entre os elementos, mesmo espaço de vão entre os elemnetos*/
+    background-color: #242424;
+    color: #b3b3b3;
+    font-size: 14px; /* tamanho da fonte*/
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 16px 20px; 
+}
+
+.section-playlist .section-playlist_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist_content .text{
+    padding-bottom: 14px;
+    color: #fff;
+    font-family:"DM Sans", sans-serif;
+}
+
+.section-playlist_content .title{
+    font-weight: 700;
+}
+
+.section-playlist_content .subtitle{
+    font-weight: 500px;
+    font-size: 12px;
+}
+.section-playlist_content .section-playlist_button{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    margin-top: 12px;
+    border: 0px;
+    width: 113px;
+}
+
+.sidebar .cookies{
+    margin: 25px 20px;
+}
+
+.sidebar .cookies a{
+   color: #b3b3b3;
+   font-weight: 500;
+   font-size: 10px;
+   text-decoration: none;
+}
+
+.sidebar .cookies a:hover{
+   text-decoration: underline; /*faz um efeito quando o o cursor esta no item - sublinhado */
+}
+
+.languages .languages_button{
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #878787;/*borda solidada forma um contorno*/
+    color: #fff;
+    font-weight: bold;/*negrito-mesmo que 700*/
+    cursor: pointer;/*cursor quando clicar ou oassar por esse botão*/
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+footer{
+    flex-direction: initial;/*flexivel em que direção*/
+    background-color:#fff;
+    color: #000;
+    padding: 40px 8px; /**alto direita **/
+    text-decoration:none;
+    font-family:"DM Sans", sans-serif;
+    margin: 6px; /* decolar do topo */ 
+}
